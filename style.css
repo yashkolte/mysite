@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+navbar {
+  width: 100vw;
+  height: 75px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+  background-color: #e0ebe8a8;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 120px;
+  height: 70px;
+  padding-top: 10px;
+}
+
+.navbar-menu ul {
+  display: flex;
+  flex-direction: row;
+}
+.navbar-menu ul li {
+  list-style: none;
+  margin: 0px 20px;
+}
+.navbar-menu ul li a {
+  text-decoration: none;
+  color: #4ab19a;
+  font-size: 20px;
+}
+.navbar-menu ul li a:hover {
+  color: #275a50;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: #e0ebe8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-cloud {
+  background: url("./cloud.png") no-repeat center;
+  position: absolute;
+  top: 40vh;
+  left: 20vw;
+  width: 200px;
+  height: 100px;
+}
+.right-cloud {
+  background: url("./cloud.png") no-repeat center;
+  position: absolute;
+  top: 20vh;
+  right: 20vw;
+  width: 200px;
+  height: 100px;
+}
+.section-content h1 {
+  font-family: "Parisienne", cursive;
+  font-size: 5rem;
+  font-weight: lighter;
+}
+
+.section-content h2 {
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.section-content {
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #4ab19a;
+  height: 40vh;
+}
+
+.bottom-image {
+  width: 100%;
+  height: 20vh;
+  justify-items: end;
+}
+
+.avatar-image {
+  height: 60vh;
+  position: relative;
+  align-self: flex-start;
+}
+
+.avatar-image img {
+  width: 10vw;
+  height: 20vh;
+  border-radius: 50%;
+}
+
+.about-text {
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-text h1{
+  font-family: poppins;
+  font-size: 1.7rem;
+  margin-top: 15px;
+  font-weight: 500;
+}
+.about-text h2{
+  margin-top: 15px;
+  font-family: poppins;
+  font-size: 1.3rem;
+  color: #275a50;
+}
+
+section2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-around;
+}
+
+.section-about {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  width: 50vw;
+  align-items: center;
+}
+
+.section-about h1{
+  color: #32917c;
+  font-weight: normal;
+  font-size: 40px;
+}
+.subbox h2 {
+  margin: 10px 0px;
+  color: #4ab19a;
+  font-weight: normal;
+  font-size: 26px;
+
+}
+.subbox h3 {
+  color: #275a50;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+
+.box1, .box2 {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+}
+
+.boximage {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.subbox{
+  width: 60%;
+}
+
+.boximage img {
+  height: 150px;
+  width: 150px;
+}
+.image2 {
+  display: flex;
+justify-content: end;
+}
+
+section3 {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 60vh;
+  align-items: center;
+  text-align: center;
+}
+
+section3 h1 {
+  color: #32917c;
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+
+section3 h2 {
+  color: #4ab19a;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 25px 0px;
+}
+
+section3 h3 {
+  color: #275a50;
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin: 25px 0px;
+}
+
+.hire-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 40vh;
+}
+
+footer {
+  height: 20vh;
+  width: 100vw;
+  background-color: #c5ded7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-menu ul li a {
+  font-size: 1.3rem;
+}
+
+footer h2 {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 16px 0;
+
+}
+
+
+
+
+
+
+
+.button-3 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+
+
+.button-3 {
+  margin: 30px 0;
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
