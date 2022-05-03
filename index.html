@@ -88,38 +88,37 @@
                 saying hey, then get in touch.</h3>
         </div>
     </section3>
-    <Section class="contactform">
-        <div class="container">
-          <div class="form" id="contactForm">
-            <div class="title">Contact Me</div>
-            <div class="input-container ic1">
-              <input id="name" name="name" class="input" type="text" placeholder=" " />
-              <div class="cut"></div>
-              <label for="firstname" class="placeholder">First name</label>
-            </div>
-            <div class="input-container ic2">
-              <input id="lastname" name="lastname" class="input" type="text" placeholder=" " />
-              <div class="cut"></div>
-              <label for="lastname" class="placeholder">Last name</label>
-            </div>
-            <div class="input-container ic2">
-                <input id="email" name="email" class="input" type="text" placeholder=" " />
-                <div class="cut cut-short"></div>
-                <label for="email" class="placeholder">Email</>
-                </div>
-                <div class="input-container ic2">
-                  <input id="phone" name="phone" class="input" type="text" placeholder=" " />
-                  <div class="cut"></div>
-                  <label for="phone" class="placeholder">Phone</label>
-                </div>
-            <div class="input-container ic2">
-              <input id="message" name="message" class="input" type="text" placeholder=" " />
-              <div class="cut cut-long"></div>
-              <label for="Message" class="placeholder">Message</>
-            </div>
-            <button type="submit" class="submit">Submit</button>
-          </div>
-    </Section>
+<section class="contactform">
+    <div class="contact">
+        <h3>Contact Me</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Company</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+</section>
 
     <footer>
         <div class="navbar-menu footer-menu">
