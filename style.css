@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: visible;
 }
 
 navbar {
@@ -27,7 +29,6 @@ navbar {
 .navbar-logo img {
   width: 100px;
   height: 100px;
-  /* padding-top: 10px; */
 }
 
 .navbar-menu ul {
@@ -256,18 +257,32 @@ footer h2 {
 }
 
 @media screen and (max-width: 900px) {
+  *{
+    font-size: 0.8rem;
+  }
+  navbar {
+    height: 18vh;
+  }
+  .navbar-container {
+    flex-direction: column;
+  }
+
   section {
-    
+    height: 87vh;
   }
-  
-  .bottom-image {
+
+  .navbar-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
+
   section2,
   .section-content{
     height: 100%;
+    margin: 2rem 0;
   }
   section3 {
+    margin: 2rem 0;
     margin-top: 10vh;
   }
   
@@ -277,13 +292,43 @@ footer h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    margin: 0px;
   }
+  .section-about{
+    text-align: center;
+  }
+
+  .box1 .boximage{
+    align-items: center;
+    justify-content: center;
+  }
+
   .section-about .box2 {
     flex-direction: column-reverse;
   }
   
   .image2 {
     justify-content: center;
+  }
+
+  .bottom-image {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  .bottom-image img{
+  /* align-self: flex-end; */
+  display: flex;
+position: absolute;
+bottom: 0px;
+  }
+
+  .right-cloud {
+    right: 10px;
+  }
+  .left-cloud {
+    top: 60vh;
   }
 }
 
@@ -297,6 +342,13 @@ footer h2 {
   height: 80vh;
 }
 
+.contact h3{
+  color: #32917c;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  text-align: center;
+}
 .contact form{
   width: 50vw;
   padding: 20px;
@@ -334,7 +386,7 @@ footer h2 {
 
 .contact form button:hover,.contact form button:focus{
   background:#92bde7;
-  color:#fff;
+  color:rgb(0, 0, 0);
   outline:0;
   transition: background-color 2s ease-out;
 }
